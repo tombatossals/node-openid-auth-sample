@@ -18,14 +18,18 @@ The code sizes very small thanks to the node modules used.
 Starting the mini-app
 =====================
 
-$ git clone https://github.com/tombatossals/node-openid-auth-sample.git
+Ensure **mongodb** is started first of all.
 
-$ cd node-openid-auth-sample/server
-
-$ npm install
-
-....
-
-$ node server.js
+ $ git clone https://github.com/tombatossals/node-openid-auth-sample.git
+ $ cd node-openid-auth-sample/server
+ $ npm install
+ ....
+ $ node server.js
 
 Browse to: http://localhost:3000
+
+Screenshots
+===========
+![shot01](https://github.com/tombatossals/node-openid-auth-sample/raw/master/wiki-imgs/shot01.png "Screenshot 01")
+![shot02](https://github.com/tombatossals/node-openid-auth-sample/raw/master/wiki-imgs/shot02.png "Screenshot 02")
+![shot03](https://github.com/tombatossals/node-openid-auth-sample/raw/master/wiki-imgs/shot03.png "Screenshot 03")
