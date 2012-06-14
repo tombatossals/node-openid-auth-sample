@@ -1,0 +1,37 @@
+!!! 5
+html
+  head
+    title= typeof(title) !== 'undefined' ? title : "Google OpenID authentication sample"
+    link(rel='stylesheet', href='/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/css/bootstrap-responsive.min.css')
+    link(rel='stylesheet', href='/css/custom.css')
+    script(src='/js/libs/jquery-min.js')
+    script(src='/js/libs/bootstrap.min.js')
+
+  body
+    div.navbar.navbar-static
+        div.navbar-inner
+            div.container-fluid
+                a#title.brand(href='/') Google OpenID authentication sample
+                div.nav-collapse.pull-right
+                        div.btn-group
+                            - if (user)
+                                a.btn.btn-large.btn-primary(href="/profile")
+                                    i.icon-th-large.icon-white 
+                                    |&nbsp;#{user.displayName}
+                                button.btn.btn-large.btn-primary.dropdown-toggle(data-toggle="dropdown")
+                                    span.caret
+                                ul.dropdown-menu
+                                    li
+                                        a(href="/profile")
+                                            i.icon-user
+                                            |&nbsp;Perfil de usuario
+                                    li.divider
+                                    li
+                                        a(href="/logout")
+                                            i.icon-off
+                                            |&nbsp;Salir 
+                            - else
+                                a.btn.btn-large.btn-primary(href="/auth/google") Accedir
+    #main
+      != body

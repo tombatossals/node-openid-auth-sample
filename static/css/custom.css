@@ -1,0 +1,12 @@
+body {
+  padding: 1em;
+}
+
+div.container-fluid {
+    padding: 0;
+}
+
+a#title {
+    font-weight: bold;
+    color: white;
+}
