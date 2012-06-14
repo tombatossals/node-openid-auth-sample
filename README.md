@@ -1,7 +1,7 @@
 node-openid-auth-sample
 =======================
 
-Example application which adds an authentication framework template for a node.js application.
+Example application which adds an authentication framework template for Google users (via OpenID) for an express/node.js application.
 
 Technologies used:
 * node.js (http://nodejs.org/)
