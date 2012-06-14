@@ -17,10 +17,15 @@ The code sizes very small thanks to the node modules used.
 
 Starting the mini-app
 =====================
+
 $ git clone https://github.com/tombatossals/node-openid-auth-sample.git
+
 $ cd node-openid-auth-sample/server
+
 $ npm install
+
 ....
+
 $ node server.js
 
 Browse to: http://localhost:3000
